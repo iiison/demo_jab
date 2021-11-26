@@ -1,0 +1,101 @@
+@import "../../styles/base/_variables";
+
+.labelTitle {
+  padding-right: $L;
+}
+
+.input {
+  background-color: transparent;
+  border: 1px solid $base-white;
+  border-radius: 5px;
+  padding: $S;
+  color: $white;
+  outline: none;
+  transition: all 0.5s ease-in-out;
+
+  &:focus {
+    border-color: $theme-lighter;
+  }
+}
+
+.error {
+  position: absolute;
+  bottom: -3px;
+  transform: translate(5px, 100%);
+  font-size: 12px;
+  color: $negative;
+}
+
+.multiOption{
+  border: 1px solid $base-white;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+
+  .options {
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    top: 98%;
+    background: $base-white;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    color: $theme;
+    max-height: 0;
+    z-index: 99;
+    visibility: hidden;
+    border: 1px solid $base-white;
+  }
+
+  &:hover {
+    .options {
+      max-height: 500px;
+      visibility: unset;
+    }
+  }
+
+  .option {
+    padding: $S;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background: $theme;
+      color: $theme-lighter;
+    }
+  }
+
+  .optionTag {
+    border: 1px solid $theme-lighter;
+    margin: 0 5px;
+    padding: 2px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:after {
+      content : '\274C';
+      margin-left: 8px;
+      font-size: 5px;
+    }
+  }
+}
+
+.multiOptionContent {
+  &:after {
+    content: '\25BA';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(0, -50%) rotate(-30deg);
+    opacity: 0.7;
+    font-size: 11px;
+  }
+}
+
+.select {
+  background: transparent;
+  outline: none;
+  border: 1px solid $base-white;
+  padding: $S;
+  border-radius: 5px;
+  color: $base-white;
+}

@@ -1,0 +1,35 @@
+{
+  "presets" : [
+    "@babel/preset-env",
+    "@babel/preset-react"
+  ],
+  "plugins" : [
+    "@babel/plugin-proposal-export-default-from",
+    "@babel/plugin-proposal-export-namespace-from",
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        regenerator : true
+      }
+    ],
+    [
+      'module-resolver',
+      {
+        'alias' : {
+          $APP        : './app',
+          $BUILD      : './build',
+          $REDUX      : './app/redux',
+          $CONFIGS    : './app/configs',
+          $RUTILS     : './app/redux/utils',
+          $RMODULES   : './app/redux/modules',
+          $SCREENS    : './app/screens',
+          $COMPONENTS : './app/components',
+          $ICONS      : './app/components/icons',
+          $UTILS      : './app/utils'
+        },
+        'root': ['./node_modules', './app'],
+      }
+    ]
+  ]
+}
+

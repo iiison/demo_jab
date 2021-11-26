@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`>> COMPONENT -- TextInput Tests • Component - UI Tests renders the Input component snapshot 1`] = `
+<div>
+  <form
+    action=""
+    class="col-12 grid"
+  >
+    <div
+      class="grid col-12"
+    >
+      <label
+        class="relative col label"
+        for="test"
+      >
+        <div
+          class="grid-middle"
+        >
+          <div
+            class="col grid"
+          >
+            <input
+              class="col-12 input"
+              id="test"
+              type="text"
+              value="some value"
+            />
+          </div>
+        </div>
+      </label>
+    </div>
+  </form>
+</div>
+`;

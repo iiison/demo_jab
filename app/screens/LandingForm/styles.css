@@ -1,0 +1,11 @@
+@import "../../styles/base/_variables";
+
+.pageHeader {
+  color: $theme-lighter;
+}
+
+.preview {
+  border-radius: 8px;
+  border: 1px solid $base-white;
+  padding: $XL;
+}

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`>> COMPONENT -- Form Tests • Component - UI Tests renders the Form component snapshot 1`] = `
+<div>
+  <form
+    action=""
+    class="col-12 grid"
+  >
+    <p>
+      Nothing!
+    </p>
+  </form>
+</div>
+`;

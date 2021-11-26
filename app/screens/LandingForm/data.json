@@ -1,0 +1,38 @@
+[
+  {
+    "label": "Name",
+    "type": "text",
+    "required": true
+  },
+  {
+    "label": "Columns",
+    "type": "multiselect",
+    "options": [
+      { "value": "book", "name": "Book" },
+      { "value": "term", "name": "Term" }
+    ]
+  },
+  {
+    "label": "Rows",
+    "type": "multiselect",
+    "options": [
+      { "value": "currency", "name": "Currency" },
+      { "value": "qualifier", "name": "Qualifier" }
+    ]
+  },
+  {
+    "label": "Fields",
+    "type": "select",
+    "options": [
+      { "value": "pv", "name": "PV" }
+    ]
+  },
+  {
+    "label": "Flatten table",
+    "type": "checkbox",
+    "value": [],
+    "options": [
+      { "value" : true, "name" :  "yup" }
+    ]
+  }
+]
